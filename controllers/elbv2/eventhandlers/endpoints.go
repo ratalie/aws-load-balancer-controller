@@ -17,6 +17,7 @@ import (
 )
 
 // NewEnqueueRequestsForEndpointsEvent constructs new enqueueRequestsForEndpointsEvent.
+//
 func NewEnqueueRequestsForEndpointsEvent(k8sClient client.Client, logger logr.Logger) handler.EventHandler {
 	return &enqueueRequestsForEndpointsEvent{
 		k8sClient: k8sClient,
